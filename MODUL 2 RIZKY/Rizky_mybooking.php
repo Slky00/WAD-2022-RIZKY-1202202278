@@ -6,7 +6,7 @@
 </head>
 <body>
 <?php
-    $name = isset($_POST['name']) ? $_POST['name'] : '';
+    $nama = isset($_POST['name']) ? $_POST['name'] : '';
     $bokdate = isset($_POST['bokdate']) ? $_POST['bokdate'] : '';
     $jam = isset($_POST['jam']) ? $_POST['jam'] : '';
     $number = isset($_POST['number']) ? $_POST['number'] : 0;
@@ -74,7 +74,7 @@
                     <td><?php echo $bokdate ?> <?php echo $jam ?></td>
                     <td><?php echo $checkout ?> <?php echo $jam ?></td>
                     <td><?php echo $car ?></td>
-                    <td><?php echo $numberhp ?></td>
+                    <td><?php echo $numberHp ?></td>
                     <td>
                     <?php if (empty($services)) {
                       echo "No Service";
