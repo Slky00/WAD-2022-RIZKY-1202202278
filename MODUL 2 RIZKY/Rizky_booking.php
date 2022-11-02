@@ -11,7 +11,7 @@
     <div class="container">
     <div class="row card-container">
       <div class="col booking-img-box">
-        <img src="<?php echo isset($_GET['car']) ? $_POST['car'] : "RS6L" ?>.png" alt="car" class="booking-img">
+        <img src="<?php echo isset($_GET['car']) ? $_GET['car'] : "RS6L" ?>.png" alt="car" class="booking-img">
       </div>
       <div class="col">
           <h3>Rent your car now!</h3>
