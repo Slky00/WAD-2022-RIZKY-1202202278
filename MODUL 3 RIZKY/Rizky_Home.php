@@ -25,7 +25,7 @@
                      echo 'Rizky_index.php?page=additem';
                   }
                   ?>">
-            <a href="Rizky_index.php" class="btn bg-primary text-white mt-3">MyCar</a>
+            <a href="Rizky_index.php?page=<?php echo mysqli_num_rows($result) ? "mycar" : "additem" ?>" class="btn bg-primary text-white mt-3">MyCar</a>
           </a>
           </div><br><br>
           <div class="row">

@@ -21,13 +21,13 @@
         <div class="container" style="margin-top:20px;">
         <div class="row">
         <div class="col-10 " style="margin-top:20px;">
-          <h3>Audi RS6</h3>
-          <p>Detail Mobil RS6</p> <br>
+          <h3><?= $select['nama_mobil'] ?> </h3>
+          <p>Detail Mobil <?= $select['nama_mobil'] ?> </p> <br>
 
         <div class="container">
         <div class="row card-container">
         <div class="col booking-img-box">
-            <img style="width:500px"src="img/<?= $select['foto_mobil'] ?>" alt="car" class="booking-img">
+            <img style="width:500px" src="img/<?= $select['foto_mobil'] ?>" alt="car" class="booking-img">
         </div>
         <div class="col">
             <form action="Rizky_index.php?page=mybooking" method="POST" class="booking-form">
@@ -71,12 +71,12 @@
                         </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="statuss" id="flexRadioDefault2" value="belum lunas" <?php echo $select['status_pembayaran'] == 'lunas' ? 'checked' : '' ?> readonly>
+                    <input class="form-check-input" type="radio" name="statuss" id="flexRadioDefault2" value="belum lunas" <?php echo $select['status_pembayaran'] == 'belum lunas' ? 'checked' : '' ?> readonly>
                     <label class="form-check-label" for="flexRadioDefault2">
                         Belum Lunas
                     </label>
                 </div>
 
-            <div class="col-md-3 mx-auto text-center">
-            <a href  type="button" class="btn btn-primary btn-lg">Edit</a>
+            <div class="col-md-3 text-center">
+                <a href="Rizky_index.php?page=edit&id=<?= $select['id_mobil'] ?>"  type="button" class="btn btn-primary btn-lg">Edit</a>
             </div>

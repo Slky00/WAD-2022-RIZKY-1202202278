@@ -4,7 +4,6 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
 <body>
   <div class="container" style="margin-top:20px;">
@@ -27,12 +26,16 @@
                   <div class="col-6">
                   <a href='Rizky_index.php?page=detail&id=<?= $select['id_mobil'] ?>' type="button" class="btn btn-primary col-12">Detail</a>
                   </div><div class="col-6">
-                  <a href='config/delete.php?id=<?php echo $select['id_mobil'] ?>' class="btn btn-primary col-12 bg-danger ">Delete</a>
+                  <a href='config/hapus.php?id=<?php echo $select['id_mobil'] ?>' class="btn btn-primary col-12 bg-danger ">Delete</a>
             </div></div></div>
-        </div> <?php
+        </div> 
+    <?php
       }
-    }?>
+    }
+    ?>
+    <span class="jumlah_mobil">Jumlah Mobil: <?= mysqli_num_rows($result) ?></span>
     </section>
+  </div>
 
         
         
