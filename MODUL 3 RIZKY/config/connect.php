@@ -1,5 +1,5 @@
 <?php
-$connect = mysqli_connect("localhost:3307", "root", "", "modultiga");
+$connect = mysqli_connect("localhost:3307", "root", "", "modul3");
 
 
 ?>
