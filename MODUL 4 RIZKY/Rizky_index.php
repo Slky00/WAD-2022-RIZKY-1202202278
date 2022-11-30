@@ -5,7 +5,7 @@ if ($_POST) {
     $navbar_color = $_POST['navbar_color'];
 } 
 else {
-    if (isset($_COOKIE['navbar-color'])) {
+    if (isset($_SESSION['navbar-color'])) {
         $_POST['navbar_color'] = $_COOKIE['navbar-color'];
     }
 }

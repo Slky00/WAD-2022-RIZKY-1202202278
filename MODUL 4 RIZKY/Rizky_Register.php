@@ -9,7 +9,7 @@
 </head>
 
 <?php include('config/connectorRizky.php'); ?>
-<?php if (isset($_SESSION['register']) && $_SESSION['register'] == 'gagal') {$_SESSION['register']='';?>
+<?php if (isset($_COOKIE['register']) && $_SESSION['register'] == 'gagal') {$_SESSION['register']='';?>
     <div class="alert alert-warning m-0 p-2 alert-dismissible" role="alert"> Email anda sudah terdaftar!
         <button type="button" class="btn-close p-3" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
