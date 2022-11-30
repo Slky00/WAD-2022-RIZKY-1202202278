@@ -38,7 +38,7 @@ if (isset($_POST['remember'])) {
             $result = mysqli_query($connect, "SELECT * FROM showroom_rizky_tables");
         ?>
      <section id="navbar">
-        <nav class="navbar navbar-expand-lg bg-<?= isset($_COOKIE['navbar_color']) ? $_COOKIE['navbar_color'] : 'primary' ?>">
+        <nav class="navbar navbar-expand-lg bg-<?= isset($_COOKIE['warna']) ? $_COOKIE['warna'] : 'primary' ?>">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                   </a>

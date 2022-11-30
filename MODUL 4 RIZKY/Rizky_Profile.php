@@ -18,7 +18,7 @@ include 'config/connectorRizky.php';
     $data = mysqli_fetch_assoc($query);
 ?>
 
-    <form action="config/Edit_Profile" method="post">
+    <form action="config/Edit_Profile.php" method="post">
     <div class="container" style="margin-top:20px;">
         <div class="row">
         <div class="col-10 " style="margin-top:20px;">
@@ -71,7 +71,7 @@ include 'config/connectorRizky.php';
         </div>
         <div class="form-group">
         <div class="from-check text-center pt-5 mb-5">
-            <input type="submit" class="btn btn-primary" name="Update" id="simpan">
+            <input type="submit" class="btn btn-primary" Value="Update" name="Update" id="simpan" >
         </div>
         </div>
     </div>

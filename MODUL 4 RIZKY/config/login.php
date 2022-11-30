@@ -14,6 +14,7 @@
 
         setcookie('email', $emailu, time()+85400*30, '/');
         setcookie('password', $password, time()+85400*30, '/');
+        setcookie('no_hp', $getdata['nomor'], time()+85400*30, '/');
         setcookie('nama', $getdata['nama'], time ()+85400*30,'/');
         header('location: ../Rizky_index.php');
 
