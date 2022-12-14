@@ -46,7 +46,7 @@ class ShowroomController extends Controller
         return redirect('/my-car');
     }
 
-    public function delete($id) {
+    public function {
         $delete_mobil = Showroom::where('id', $id)->delete();
         $showrooms = Showroom::all();
         return view('ListCar-Rizky', ['showrooms' => $showrooms]);

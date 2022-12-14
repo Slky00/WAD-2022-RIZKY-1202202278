@@ -2,7 +2,7 @@
 <html lang="en">
     @include('partial.head')
     <body>
-        @include('partial.navbar')
+
         <section class="home">
             <div class="home__left">
                 <h1 class="home__title">Selamat Datang di Show Room Rizky</h1>

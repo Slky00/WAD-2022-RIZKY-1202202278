@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ShowroomController;
 use App\Http\Controllers\UserController;
 use App\Models\Showroom;
 
