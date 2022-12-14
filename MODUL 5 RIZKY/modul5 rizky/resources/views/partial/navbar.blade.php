@@ -16,7 +16,7 @@
                 </div>
                 <div class="nav-user">
                     <a id="{{ isset(auth()->user()->name) ? 'hide' : '' }}" class="nav-link nav-login" href="/login">Login</a> 
-                    <a href="/add-item" class="nav-additem" id="{{ isset(auth()->user()->name) ? '' : 'hide' }}">Add Item</a>
+                    <a href="/add-item" class="nav-additem">Add Item</a>
                     <div class="dropdown" id="{{ !isset(auth()->user()->name) ? 'hide' : '' }}">
                         <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             {{isset(auth()->user()->name) ? auth()->user()->name : ''}}
